@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/video.css">
+    <script src="https://kit.fontawesome.com/4b86abd7c5.js"></script>
+    <script src="js/video.js"></script>
+</head>
+
+<body>
+    <div id="content_container">
+        <div id="video_containter">
+            <video id="video_player" controls>
+                <source src="https://quanack.nyc3.cdn.digitaloceanspaces.com/Summer2018.mp4">
+            </video>
+            <div id="video_controls">
+                <div id="video_player_progress">
+                    <div id="video_player_progress_bar"></div>
+                </div>
+                <div id="video_player_buttons">
+                    <div id="video_player_left_buttons">
+                        <div class="video_player_button_left">
+                            <i id="video_player_playpause" class="fas fa-play" onclick="togglePlayPause();"></i>
+                        </div>
+                        <div id="video_player_time"><span id="video_player_currentpos">00:00</span> / <span id="video_player_duration">00:00</span></div>
+                    </div>
+                    <div id="video_player_right_buttons">
+                        <div class="video_player_button_right">
+                            <i id="video_player_fullscreen" class="fas fa-expand" onclick="toggleFullScreen();"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
